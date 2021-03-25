@@ -1,3 +1,5 @@
+# NOT COMPLETE
+
 def intersect(nums1, nums2)
     sm_array = nums1.length < nums2.length ? nums1 : nums2
     lg_array = nums1.length > nums2.length ? nums1 : nums2
