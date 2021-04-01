@@ -15,5 +15,7 @@ def fizz_buzz(n)
     end
     i += 1
   end
+
   return fb
+  
 end
