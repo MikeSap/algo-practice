@@ -1,13 +1,7 @@
-# NOT COMPLETE
-
 def intersect(nums1, nums2)
-    sm_array = nums1.length < nums2.length ? nums1 : nums2
-    lg_array = nums1.length > nums2.length ? nums1 : nums2
 
-    int = sm_array.select do |num|
-      lg_array.include?num
-      i = lg_array.find_index(num)
-      lg_array.delete_at(i)
-    end
-    int
+(nums1 & nums2).flat_map { |n| [n]*[nums1.count(n), nums2.count(n)].min }
+
 end
+
+intersect([4,9,5],[9,4,9,8,4])
