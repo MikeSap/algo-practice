@@ -5,7 +5,10 @@ def string_addition(string)
   nums = string.split('+')
 
   nums.each do |num|
+    return num if num == "ten"
     sum += num.to_i
   end
 
 end
+
+string_addition("ten")
